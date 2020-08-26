@@ -45,7 +45,7 @@ function setup() {
 	//dustbin2 = new Dustbin(1225,615,15,150);
 	//dustbin3 = new Dustbin(1375,615,15,120);
 
-	paperBall = new Paper(600,200,20,PI/4);
+	paperBall = new Paper(400,200,20,-PI/20);
   
 }
 
@@ -59,8 +59,8 @@ function draw() {
   ellipseMode (RADIUS);
   ellipse (paperBall.position.x,paperBall.position.y,20,20);*/
 
-  ground.display();
   paperBall.display();
+  ground.display();
   dustbin1.display();
   //dustbin2.display();
   //dustbin3.display();
@@ -74,7 +74,7 @@ function draw() {
 
 function keyPressed () {
    if (keyCode === UP_ARROW) {
-	   Matter.Body.applyForce (paperBall.body,paperBall.body.position,{x:4,y:-3});
+	   Matter.Body.applyForce (paperBall.body,paperBall.body.position,{x:0.3,y:-0.81});
 	   
 	   
 	
