@@ -8,7 +8,7 @@ class Paper {
         
       }
       this.image = loadImage("paper.png")
-      this.body = Bodies.circle(x,y,30, options);
+      this.body = Bodies.circle(x,y,12, options);
       //this.width = 10;
       //this.height = 5;
       Matter.Body.setAngle(this.body, angle);
